@@ -22,18 +22,18 @@ class Bengaluru():
 
         try:
             with open(config.MODEL_FILE_PATH,"rb")as f:
-             self.model = pickle.load(f)
+                self.model = pickle.load(f)
 
         except:
-             with open("model.pkl","rb")as f:
-              self.model = pickle.load(f)
+            with open("model.pkl","rb")as f:
+                self.model = pickle.load(f)
 
         try:
             with open(config.JSON_FILE_PATH,"r")as f:
-             self.data = json.load(f)
+                self.data = json.load(f)
         except:
             with open("data.json","r")as f:
-             self.data = json.load(f)
+                self.data = json.load(f)
 
 
         return self.data,self.model
