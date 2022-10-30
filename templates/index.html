@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru House Price Prediction</title>
+</head>
+<body style="background-color :rgb(51, 116, 150);">
+    <h1>Bengaluru House Price Prediction</h1>
+    <form method="POST" action="/predict_price">
+
+        <label>availability :</label>
+        <input type = "text" name = "availability">
+        </select>
+        <br>
+        <br>
+
+        <label>size :</label>
+        <input type = "text" name = "size">
+        </select>
+        <br>
+        <br>
+
+        <label>total_sqft :</label>
+        <input type = "text" name = "total_sqft">
+        </select>
+        <br>
+        <br>
+
+        <label>bath :</label>
+        <input type = "text" name = "bath">
+        </select>
+        <br>
+        <br>
+
+        <label>balcony :</label>
+        <input type = "text" name = "balcony">
+        </select>
+        <br>
+        <br>
+
+        <label>area_type :</label>
+        <input type = "text" name = "area_type">
+        </select>
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Our predicted House Price is  <b> {{ prediction }} /- Lakhs .</b> Only </p>
+
+
+
+    </form>    
+</body>
+</html>
